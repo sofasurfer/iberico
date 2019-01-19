@@ -1,0 +1,80 @@
+Title: Kontakt
+
+----
+
+Text: 
+
+----
+
+Intro: Besuchen Sie Gourmet-Ibérico in der schönen Altstadt von Rapperswil.
+
+----
+
+Contactoptions: 
+
+- 
+  title: Contact
+  text: >
+    Feel free to drop us a line if you have
+    any questions.
+  url: mailto:support@getkirby.com
+  linktext: Write an email
+  icon: contact.svg
+- 
+  title: Forum
+  text: >
+    Join the Kirby community and connect
+    with others.
+  url: https://forum.getkirby.com/
+  linktext: Visit Kirby’s forum
+  icon: forum.svg
+- 
+  title: GitHub
+  text: >
+    Report Kirby-related issues directly on
+    GitHub.
+  url: https://github.com/getkirby
+  linktext: Kirby on GitHub
+  icon: github.svg
+- 
+  title: Docs
+  text: "Check out Kirby's detailed tutorials and instructions."
+  url: https://getkirby.com/docs
+  linktext: Documentation
+  icon: docs.svg
+
+----
+
+Address: 
+
+**Gourmet-Ibérico**
+Schmiedgasse 42, 
+8640 Rapperswil-Jona
+076 380 01 00
+(email: info@gourmet-iberico.ch text: info@gourmet-iberico.ch)
+
+----
+
+Openinghours: 
+
+- 
+  title: Montag
+  text: Geschlossen
+- 
+  title: Dienstag
+  text: Geschlossen
+- 
+  title: Mittwoch
+  text: '16:00 - 20:00'
+- 
+  title: Donnerstag
+  text: '16:00 - 20:00'
+- 
+  title: Freitag
+  text: '16:00 - 21:00'
+- 
+  title: Samstag
+  text: '13:00 - 19:00'
+- 
+  title: Sonntag
+  text: Geschlossen

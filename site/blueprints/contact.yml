@@ -1,0 +1,38 @@
+title: Contact
+
+pages: false
+
+options: 
+  delete: false
+  status: false
+
+fields: 
+  title:
+    label: Title
+    type: title
+  
+  intro:
+    label: Intro
+    type: textarea
+
+  address:
+    label: Adresse
+    type: textarea
+    width: 2/4
+    
+  openinghours:
+    label: Opening hours
+    type: structure
+    width: 2/4    
+    style: table
+    fields:
+      title:
+        label: Tag
+        type: text
+      text:
+        label: Zeit
+        type: text
+  
+  text:
+    label: Text
+    type: textarea
