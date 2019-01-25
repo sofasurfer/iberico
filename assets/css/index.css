@@ -604,6 +604,16 @@ dl dd{
   top: 0;
 }
 
+.socialfeed .showcase-item{
+  width: 33.33%!important;
+  max-height: 275px;
+  overflow: hidden;
+}
+
+p.showcase-title{
+  color: #840925;
+}
+
 .showcase-link:hover .showcase-caption,
 .showcase-link:focus .showcase-caption {
   opacity: 1;
@@ -897,8 +907,10 @@ body {
   color: #840925;
   border-radius: 4px;
   padding: 10px 15px;
+  margin: 5px;
   background-color: transparent;   
   border: solid 1px #840925;
+  text-transform: uppercase;
 }
 .btn:hover,
 .btn-download:hover{
@@ -1000,3 +1012,30 @@ body {
     width: 33.33%;
   }
 }
+
+
+@media all and (max-width: 1200px) {
+  .header .grid,
+  .header .grid .column{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .menu-item:first-child{
+    display: block;
+  }
+  .menu-item:first-child::after{
+    display: none;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .grid.gutter-1.col-2.c-info .column{
+    width: 100%;
+  }
+  .c-info .column.pull-right{
+    text-align: left;
+    margin-top: 3rem;
+  }
+}
+

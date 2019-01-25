@@ -7,7 +7,7 @@
       <div class="intro text">
         <?= $page->intro()->kirbytext() ?>
       </div>
-      <div class="grid gutter-1 col-2">
+      <div class="c-info grid gutter-1 col-2">
         <div class="column"> 
           <dl>
             <?php foreach($page->openinghours()->toStructure() as $item): ?>

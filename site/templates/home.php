@@ -23,6 +23,23 @@
       
     </section>
 
+    <div class="wrap">
+      <h2></h2>
+
+      <ul class="socialfeed grid gutter-1">
+      <?php
+      $counter = 0;
+      foreach($socialfeed->data as $feed ){
+        snippet('feeditem', ['feed' => $feed]);
+        $counter++;
+        if( $counter > 11){
+          break;
+        }
+      }
+      ?>
+      </ul>
+    </div>
+
   </main>
 
 <?php snippet('footer') ?>

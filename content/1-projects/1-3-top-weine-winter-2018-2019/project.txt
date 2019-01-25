@@ -1,15 +1,14 @@
-Title: Köstliches Olivenöl
+Title: 3 Top Weine.  Unsere Empfehlung für den Winter 2018 / 2019
 
 ----
 
-Year: 2013
+Year: 2018
 
 ----
 
 Text: 
 
-(image: artajo02.png)
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1686169.055885572!2d-2.6551809855901696!3d41.64264739571079!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2a67e1df0d3bca4f!2sOil+Artajo+SL!5e0!3m2!1sde!2sch!4v1547974237246" width="865" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-
+**Unsere Empfehlung für den Winter 2018 / 2019**
+(image: rebe2.png)
+(image: duero.png)
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
