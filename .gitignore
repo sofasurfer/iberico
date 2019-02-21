@@ -13,8 +13,8 @@ Icon
 /site/cache/*
 !/site/cache/index.html
 
-/site/content/*
-!/site/content/index.html
+/content/*
+!/content/index.html
 
 # -------------SECURITY-------------
 # NEVER publish these files via Git!
