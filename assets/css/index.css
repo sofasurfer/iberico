@@ -701,22 +701,32 @@ body {
   border-bottom: 0;
 }
 
+
+
 @media all and (min-width: 56em) {
+
   .header {
     padding-top: 3rem;
     padding-bottom: 1.5rem;
   }
+
   .branding {
     line-height: 3rem;
     margin-bottom: 0;
     white-space: nowrap;
     text-align: left;
   }
+
   .branding,
   .navigation {
     vertical-align: baseline;
-    width: 50%;
+    width: 40%;
   }
+
+  .navigation {
+    width: 60%;
+  }
+  
 }
 
 /* -----  3.2 Menu  --------------------------------------------------------- */

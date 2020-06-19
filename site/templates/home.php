@@ -16,7 +16,7 @@
     <section class="projects-section">
       
       <div class="wrap wide">
-        <h2>Angebote</h2>
+        <h2>Produkte</h2>
         <?php snippet('showcase', ['limit' => 3]) ?>
         <p class="projects-section-more"><a href="<?= page('projects')->url() ?>" class="btn">Alle zeigen &hellip;</a></p>
       </div>
