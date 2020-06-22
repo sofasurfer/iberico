@@ -1,6 +1,6 @@
 <?php
 
-$projects = page('projects')->children()->visible();
+$projects = false; // page('projects')->children()->visible();
 
 /*
 
@@ -16,10 +16,10 @@ https://getkirby.com/docs/templates/snippets
 
 */
 
-if(isset($limit)) $projects = $projects->limit($limit);
+// if(isset($limit)) $projects = $projects->limit($limit);
 
 ?>
-
+<?php if($projects != false): ?>
 <ul class="showcase grid gutter-1">
 
   <?php foreach($projects as $project): ?>
@@ -38,3 +38,4 @@ if(isset($limit)) $projects = $projects->limit($limit);
   <?php endforeach ?>
 
 </ul>
+<?php endif; ?>

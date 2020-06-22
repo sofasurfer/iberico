@@ -13,7 +13,7 @@
   project, you can do a simple search & replace to adjust
   the color scheme to your needs.
   
-  - Background:            #fffff8
+  - Background:           #fffff8
   - Text:                  #707070
   - Hovered Links:         #560bed
   - Active Button BG:      #4509be
@@ -61,6 +61,10 @@
 */
 
 /* =====  1 Global Rules & Definitions  ===================================== */
+
+
+
+
 
 /* -----  1.1 Font Definitions  --------------------------------------------- */
 
@@ -200,7 +204,7 @@ hr::before {
 
 hr::after {
   content: "× × ×";
-  background: #fffff8;
+  background: var(--main-bg-color);
   position: relative;
   padding: 0 .25rem;
   top: -.25rem;
@@ -258,6 +262,7 @@ figcaption {
   overflow: hidden;
   clear: both;
 }
+
 
 /* -----  2.1 Kirbytext  ---------------------------------------------------- */
 
@@ -640,9 +645,9 @@ p.showcase-title{
 /* =====  3 Site Layout  ==================================================== */
 
 html {
-  background: #fffff8;
+  background: var(--main-bg-color);
   color: #707070;
-  font: normal 400 1.5em/1.5 "Vesper Libre", Georgia, serif;
+  font: normal 400 1.2em/1.5 "Vesper Libre", Georgia, serif;
   /* Always show the vertical scrollbar to prevent `jumps`
      of page content after navigating from a very short page
      that does not scroll to a long pager */
@@ -726,7 +731,7 @@ body {
   .navigation {
     width: 60%;
   }
-  
+
 }
 
 /* -----  3.2 Menu  --------------------------------------------------------- */
@@ -737,30 +742,93 @@ body {
 }
 
 .menu-item {
-  display: inline-block;
+  display: block;
+  font-size: 2rem;
+  line-height: 4rem;
 }
 
-.menu-item:not(:last-child)::after {
-  content: "⁄";
+.menu-sub-item{
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+/*.menu-item:not(:last-child)::after {
+  content: "";
   display: inline-block;
   font-size: .75em;
   padding: 0 .2em;
   color: #a8a5be;
-}
+}*/
 
 .menu-item a {
   border-bottom: 0;
 }
 
-.menu-item.is-active a {
+.menu-item.is-active > a {
   border-bottom: 2px solid #840925;
 }
+.menu-sub-item.is-active > a {
+  border-bottom: 1px solid #840925;
+}
 
-@media all and (min-width: 56em) {
+/*@media all and (min-width: 56em) {
   .menu {
     text-align: right;
   }
+}*/
+
+
+label.hamburg { 
+   display: block;
+   background: transparent; width: 75px; height: 50px; 
+   position: relative; 
+   margin-left: auto; margin-right: 0px;
+   border-radius: 4px; 
 }
+
+input#hamburg {display:none}
+.line { 
+   position: absolute; 
+   left:10px;
+   height: 4px; width: 55px; 
+   background: #840925; border-radius: 2px;
+   display: block; 
+   transition: 0.5s; 
+   transform-origin: center; 
+}
+
+.line:nth-child(1) { top: 12px; }
+.line:nth-child(2) { top: 24px; }
+.line:nth-child(3) { top: 36px; }
+
+nav.navigation{
+  display: none;
+  position: absolute;
+  background-color: var(--main-bg-color);
+  z-index: 99;
+}
+
+#hamburg:checked ~ nav.navigation{
+  display: block;
+  top: 200px;
+  left: 0px;
+  right: 0px;
+  width: auto;
+  height: 100vh;
+}
+
+#hamburg:checked + .hamburg .line:nth-child(1){
+   transform: translateY(12px) rotate(-45deg);
+}
+
+#hamburg:checked + .hamburg .line:nth-child(2){
+   opacity:0;
+}
+
+#hamburg:checked + .hamburg .line:nth-child(3){
+   transform: translateY(-12px) rotate(45deg);
+}
+
 
 /* -----  3.3 Sticky Footer  ------------------------------------------------ */
 

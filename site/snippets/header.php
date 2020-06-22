@@ -8,6 +8,11 @@
   <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
   <meta name="description" content="<?= $site->description()->html() ?>">
 
+  <style>
+  :root {
+    --main-bg-color: <?= site()->bgcolor(); ?>
+  }
+  </style>
   <?= css('assets/css/index.css') ?>
 
 </head>
@@ -20,7 +25,12 @@
         <a href="<?= url() ?>" rel="home"><img src="/assets/images/logo.png" /></a>
       </div>
 
+      <input type="checkbox" id="hamburg">
+      <label for="hamburg" class="hamburg">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+      </label>
       <?php snippet('menu') ?>
-
     </div>
   </header>

@@ -7,9 +7,13 @@
       <div class="intro text">
         <?= $page->intro()->kirbytext() ?>
       </div>
-      <hr />
     </header>
-      
+    <div class="downloads wrap">
+      <?php foreach( $page->documents() as $file): ?>
+        <a href="<?= $file->url(); ?>" class="btn" target="_blank"><?= $file->filename(); ?></a>
+      <?php endforeach ?>
+      <hr />
+    </div>
     <div class="text wrap">
       <?= $page->text()->kirbytext() ?>
     </div>

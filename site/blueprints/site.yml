@@ -16,3 +16,7 @@ fields:
   copyright:
     label: Copyright
     type:  textarea
+
+  bgcolor:
+    label: Background color
+    type:  text
