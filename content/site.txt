@@ -14,4 +14,4 @@ Copyright: © 2009–(date: Year) Gourmet-Ibérico
 
 ----
 
-Bgcolor: #fffff8
+Bgcolor: #f0efed

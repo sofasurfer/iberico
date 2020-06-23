@@ -1,7 +1,8 @@
 <?php
 
-$projects = false; // page('projects')->children()->visible();
+$projects = $pages->visible();
 
+error_log(print_r($projects,true));
 /*
 
 The $limit parameter can be passed to this snippet to
