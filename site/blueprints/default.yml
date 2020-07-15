@@ -4,6 +4,19 @@ fields:
   title:
     label: Title
     type:  text
+    width: 2/4
+
+  topstory:
+    label: TopStory
+    type: checkbox
+    text: List on homepage
+    width: 1/4
+
+  coverimage:
+    label: StoryImage
+    type: image
+    text: Image on homepage
+    width: 1/4
 
   intro:
     label: Intro

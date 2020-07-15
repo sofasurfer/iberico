@@ -1,37 +1,35 @@
 <?php
 
-$projects = $pages->visible();
+$stories = [];
 
-error_log(print_r($projects,true));
-/*
+foreach($pages->visible() as $item){
 
-The $limit parameter can be passed to this snippet to
-display only a specified amount of projects:
+  if( $item->topstory() == "1" ){
+    $stories[] = $item;
+  }
+  foreach($item->children()->visible() as $subitem){
+    if( $subitem->topstory() == "1" ){
+      $stories[] = $subitem;
+    }
+  }
 
-```
-<?php snippet('showcase', ['limit' => 3]) ?>
-```
+}
 
-Learn more about snippets and parameters at:
-https://getkirby.com/docs/templates/snippets
 
-*/
-
-// if(isset($limit)) $projects = $projects->limit($limit);
 
 ?>
-<?php if($projects != false): ?>
+<?php if($stories != false): ?>
 <ul class="showcase grid gutter-1">
 
-  <?php foreach($projects as $project): ?>
+  <?php foreach($stories as $story): ?>
 
     <li class="showcase-item column">
-        <a href="<?= $project->url() ?>" class="showcase-link">
-          <?php if($image = $project->images()->sortBy('sort', 'asc')->first()): $thumb = $image->crop(600, 600); ?>
-            <img src="<?= $thumb->url() ?>" alt="Thumbnail for <?= $project->title()->html() ?>" class="showcase-image" />
+        <a href="<?= $story->url() ?>" class="showcase-link">
+          <?php if($image = $story->coverimage()->toFile()): $thumb = $image->crop(600, 600); ?>
+            <img src="<?= $thumb->url() ?>" alt="Thumbnail for <?= $story->title()->html() ?>" class="showcase-image" />
           <?php endif ?>
           <div class="showcase-caption">
-            <h3 class="showcase-title"><?= $project->title()->html() ?></h3>
+            <h3 class="showcase-title"><?= $story->title()->html() ?></h3>
           </div>
         </a>
     </li>

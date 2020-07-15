@@ -1,0 +1,12 @@
+title: Shop
+
+fields:
+  title:
+    label: Title
+    type:  text
+    width: 2/4
+
+  csvfile:
+    label: CSV File
+    type: image
+    width: 2/4

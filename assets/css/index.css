@@ -188,7 +188,7 @@ hr {
   font-weight: 500;
   height: 1.5rem;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 1rem;
   margin-bottom: 1.5rem;
   color: #840925;
 }
@@ -250,6 +250,20 @@ figcaption {
 
 .tags li{
   display: inline-block;
+}
+
+
+
+table.shop th{
+  color: #840925;
+  text-align: left;
+}
+table.shop input{
+  padding: 5px;
+  width: 80px;
+}
+table.shop #shop-total{
+  text-align: right;
 }
 
 /* =====  2 Layout Helpers & Reusable Components  =========================== */
@@ -736,13 +750,15 @@ body {
 .menu-item {
   display: block;
   font-size: 2rem;
-  line-height: 4rem;
+  line-height: 3rem;
 }
 
 .menu-sub-item{
   font-size: 1rem;
   line-height: 2rem;
 }
+
+
 
 /*.menu-item:not(:last-child)::after {
   content: "";
@@ -769,6 +785,39 @@ body {
   }
 }*/
 
+.menu-item.home{
+  position: relative;
+}
+a.closemenu{
+  font-family: arial;
+}
+/*
+a.closemenu {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+a.closemenu:hover {
+  opacity: 1;
+}
+a.closemenu:before, a.closemenu:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+a.closemenu:before {
+  transform: rotate(45deg);
+}
+a.closemenu:after {
+  transform: rotate(-45deg);
+}
+*/
 
 label.hamburg { 
    display: block;
@@ -817,10 +866,11 @@ nav.navigation{
 #hamburg:checked ~ nav.navigation{
   display: block;
   top: 200px;
+  bottom: 0px;
   left: 0px;
   right: 0px;
   width: auto;
-  height: 100vh;
+  height: 100%;
 }
 
 #hamburg:checked + .hamburg .line:nth-child(1){

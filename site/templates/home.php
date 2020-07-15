@@ -16,29 +16,33 @@
     <section class="projects-section">
       
       <div class="wrap wide">
-        <h2>TOP STORYS</h2>
+        <h2>TOP STORIES</h2>
         <?php snippet('showcase', ['limit' => 3]) ?>
-        <p class="projects-section-more"><a href="" class="btn">Alle zeigen &hellip;</a></p>
+        <!--p class="projects-section-more"><a href="" class="btn">Alle zeigen &hellip;</a></p-->
       </div>
       
     </section>
 
-    <div class="wrap">
-      <h2></h2>
+    <!--div class="wrap">
+      <p>&nbsp;</p>
+      <h2>Instagram Feed</h2>
 
       <ul class="socialfeed grid gutter-1">
       <?php
       $counter = 0;
-      foreach($socialfeed->data as $feed ){
-        snippet('feeditem', ['feed' => $feed]);
-        $counter++;
-        if( $counter > 11){
-          break;
+      if($socialfeed && !empty($socialfeed->data)){
+        foreach($socialfeed->data as $feed ){
+          snippet('feeditem', ['feed' => $feed]);
+          $counter++;
+          if( $counter > 11){
+            break;
+          }
         }
       }
       ?>
       </ul>
-    </div>
+      <p class="projects-section-more"><a href="https://www.instagram.com/gourmetiberico1/" target="_blank" class="btn">Follow</a></p>
+    </div-->
 
   </main>
 

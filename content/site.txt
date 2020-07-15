@@ -1,12 +1,12 @@
-Title: Kirby Starterkit
+Title: Gourmet-Ibérico
 
 ----
 
-Author: Bastian Allgeier GmbH
+Author: Gourmet-Ibérico
 
 ----
 
-Description: This is Kirby's Starterkit.
+Description: Vinothek & WineBar - Mediterrane Spezialitäten
 
 ----
 
